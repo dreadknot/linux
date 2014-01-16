@@ -1,0 +1,15 @@
+#/bin/bash 
+
+cd /home/mike/moodledaily 
+
+rm moodle-latest-18.tgz 
+
+/usr/bin/wget http://download.moodle.org/stable18/moodle-latest-18.tgz 
+
+/bin/tar -zxf moodle-latest-18.tgz 
+
+cd /home/mike/moodledaily/moodle 
+
+/usr/local/bin/svn add * --force 
+
+/usr/local/bin/svn commit -m 'cvs update' 
