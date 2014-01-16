@@ -1,3 +1,5 @@
+#Find server date and count processing lines 
+
 BEGIN { 
 i = 0 
 print "Don't Panic!" 
